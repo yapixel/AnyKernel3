@@ -4,15 +4,18 @@
 ### AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Sultan Kernel for the Pixel 8/Pro With KernelSU
+kernel.string=Sultan Kernel for the Pixel 9/Pro/Fold/XL
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=husky
-device.name2=shiba
+device.name1=caiman
+device.name2=komodo
+device.name3=tokay
+device.name4=comet
 supported.versions=15
+supported.patchlevels=2024-12 - 2025-02
 '; } # end properties
 
 # boot image installation

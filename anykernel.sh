@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Sultan Kernel for the Pixel 8/Pro with SUSFS Added by TheWildJames / Morgan Weedman
+kernel.string=Sultan Kernel for the Pixel 8/Pro
 do.devicecheck=1
 do.modules=0
 do.systemless=1
@@ -12,8 +12,8 @@ do.cleanup=1
 do.cleanuponabort=0
 device.name1=husky
 device.name2=shiba
-supported.versions=15
-supported.patchlevels=2025-03 - 2025-05
+supported.versions=16
+supported.patchlevels=2025-06 - 2025-08
 '; } # end properties
 
 # boot image installation

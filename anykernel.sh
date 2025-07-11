@@ -13,8 +13,8 @@ do.cleanuponabort=0
 device.name1=cheetah
 device.name2=panther
 device.name3=lynx
-supported.versions=15
-supported.patchlevels=2024-12 - 2025-02
+supported.versions=16
+supported.patchlevels=2025-06 - 2025-08
 '; } # end properties
 
 # boot image installation
@@ -30,6 +30,3 @@ is_slot_device=1;
 reset_ak;
 split_boot;
 flash_boot;
-
-# dtbo installation
-flash_generic dtbo;

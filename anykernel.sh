@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Sultan Kernel for the Pixel 9/Pro/Fold/XL with SUSFS Added by TheWildJames / Morgan Weedman
+kernel.string=Sultan Kernel for the Pixel 9/Pro/Fold/XL
 do.devicecheck=1
 do.modules=0
 do.systemless=1
@@ -14,8 +14,8 @@ device.name1=caiman
 device.name2=komodo
 device.name3=tokay
 device.name4=comet
-supported.versions=15
-supported.patchlevels=2025-03 - 2025-05
+supported.versions=16
+supported.patchlevels=2025-06 - 2025-08
 '; } # end properties
 
 # boot image installation

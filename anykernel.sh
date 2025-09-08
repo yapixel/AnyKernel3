@@ -15,7 +15,7 @@ device.name2=komodo
 device.name3=tokay
 device.name4=comet
 supported.versions=16
-supported.patchlevels=2025-06 - 2025-08
+supported.patchlevels=
 '; } # end properties
 
 # boot image installation

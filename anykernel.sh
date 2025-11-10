@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=Wild Plus Kernel by TheWildJames or Morgan Weedman
+kernel.string=Wild Kernels by TheWildJames aka Morgan Weedman
 do.devicecheck=0
 do.modules=0
 do.systemless=0

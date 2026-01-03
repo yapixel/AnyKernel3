@@ -40,7 +40,7 @@ case $kernel_version in
     *) ksu_supported=false ;;
 esac
 
-ui_print " " "  -> ksu_supported: $ksu_supported"
+ui_print " " "  -> Wild Kernels Supported: $ksu_supported"
 $ksu_supported || abort "  -> Non-GKI device, abort."
 
 # boot install
@@ -51,4 +51,23 @@ if [ -f "split_img/ramdisk.cpio" ]; then
 else
     flash_boot
 fi
-## end boot install
+
+ui_print " "
+ui_print "WildKernels Telegram Channel:"
+ui_print "https://t.me/WildKernels"
+ui_print " "
+ui_print "WildKernels Website:"
+ui_print "https://wildkernels.dev"
+ui_print " "
+ui_print "Wild_KSU GitHub Repository:"
+ui_print "https://github.com/WildKernels/Wild_KSU"
+ui_print "KernelSU-Next fork focused on customization and root-hiding features!"
+ui_print " "
+ui_print "GKI_KernelSU_SUSFS GitHub Repository:"
+ui_print "https://github.com/WildKernels/GKI_KernelSU_SUSFS"
+ui_print "GKI kernels with KernelSU and SUSFS."
+ui_print " "
+ui_print "OnePlus_KernelSU_SUSFS GitHub Repository:"
+ui_print "https://github.com/WildKernels/OnePlus_KernelSU_SUSFS"
+ui_print "OnePlus kernels with KernelSU and SUSFS."
+ui_print " "

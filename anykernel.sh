@@ -12,7 +12,7 @@ do.cleanup=1
 do.cleanuponabort=0
 device.name1=husky
 device.name2=shiba
-supported.versions=
+supported.versions=16
 supported.patchlevels=
 '; } # end properties
 

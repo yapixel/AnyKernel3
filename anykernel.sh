@@ -51,3 +51,27 @@ if [ -f "split_img/ramdisk.cpio" ]; then
 else
     flash_boot
 fi
+
+ui_print " "
+ui_print "WildKernels Telegram Channel:"
+ui_print "https://t.me/WildKernels"
+ui_print " "
+ui_print "WildKernels Website:"
+ui_print "https://wildkernels.dev"
+ui_print " "
+ui_print "Wild_KSU GitHub Repository:"
+ui_print "https://github.com/WildKernels/Wild_KSU"
+ui_print "KernelSU-Next fork focused on customization and root-hiding features!"
+ui_print " "
+ui_print "GKI_KernelSU_SUSFS GitHub Repository:"
+ui_print "https://github.com/WildKernels/GKI_KernelSU_SUSFS"
+ui_print "GKI kernels with KernelSU and SUSFS."
+ui_print " "
+ui_print "OnePlus_KernelSU_SUSFS GitHub Repository:"
+ui_print "https://github.com/WildKernels/OnePlus_KernelSU_SUSFS"
+ui_print "OnePlus kernels with KernelSU and SUSFS."
+ui_print " "
+ui_print "Samsung_KernelSU_SUSFS GitHub Repository:"
+ui_print "https://github.com/WildKernels/Samsung_KernelSU_SUSFS"
+ui_print "Samsung kernels with KernelSU and SUSFS."
+ui_print " "

@@ -24,6 +24,8 @@ is_slot_device=1;
 split_boot;
 flash_boot;
 
+rm -f "$AKHOME/Image.lz4"
+
 # vendor_kernel_boot installation (for dtb)
 block=vendor_kernel_boot;
 is_slot_device=1;

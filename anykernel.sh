@@ -10,6 +10,7 @@ do.modules=0
 do.systemless=0
 do.cleanup=1
 do.cleanuponabort=0
+do.check_boot_version=0
 device.name1=
 device.name2=
 device.name3=
@@ -32,6 +33,7 @@ no_magisk_check=1
 # import functions/variables and setup patching - see for reference (DO NOT REMOVE)
 . tools/ak3-core.sh
 
+# GKI check
 kernel_version=$(cat /proc/version | awk -F '-' '{print $1}' | awk '{print $3}')
 case $kernel_version in
     5.1*) ksu_supported=true ;;
@@ -45,7 +47,8 @@ $ksu_supported || abort "  -> Non-GKI device, abort."
 
 # boot install
 split_boot
-if [ -f "split_img/ramdisk.cpio" ]; then
+
+if [ -f "$SPLITIMG/ramdisk.cpio" ]; then
     unpack_ramdisk
     write_boot
 else

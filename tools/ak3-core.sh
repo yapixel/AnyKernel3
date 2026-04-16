@@ -978,9 +978,6 @@ extract_kernel_version() {
 }
 
 # Version comparison: returns 0 if a >= b, 1 if a < b
-Bash
-
-
 version_ge() {
   local new=$1 dev=$2
   local n1 n2 n3 d1 d2 d3

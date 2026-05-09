@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=Wild Kernels by TheWildJames aka Morgan Weedman
+kernel.string=KSU GKI Kernel
 do.devicecheck=0
 do.modules=0
 do.systemless=0
@@ -36,14 +36,13 @@ no_magisk_check=1
 # GKI check
 kernel_version=$(cat /proc/version | awk -F '-' '{print $1}' | awk '{print $3}')
 case $kernel_version in
-    5.1*) ksu_supported=true ;;
-    6.1*) ksu_supported=true ;;
-    6.6*) ksu_supported=true ;;
+    5.10*|5.15*|6.1*|6.6*|6.12*) ksu_supported=true ;;
     *) ksu_supported=false ;;
 esac
 
-ui_print " " "  -> Wild Kernels Supported: $ksu_supported"
-$ksu_supported || abort "  -> Non-GKI device, abort."
+ui_print " " "  -> GKI Kernel Detected: $kernel_version"
+ui_print " " "  -> KSU Supported: $ksu_supported"
+$ksu_supported || abort "  -> This kernel requires a GKI device (5.10+), abort."
 
 # boot install
 split_boot
@@ -54,27 +53,3 @@ if [ -f "$SPLITIMG/ramdisk.cpio" ]; then
 else
     flash_boot
 fi
-
-ui_print " "
-ui_print "WildKernels Telegram Channel:"
-ui_print "https://t.me/WildKernels"
-ui_print " "
-ui_print "WildKernels Website:"
-ui_print "https://wildkernels.dev"
-ui_print " "
-ui_print "Wild_KSU GitHub Repository:"
-ui_print "https://github.com/WildKernels/Wild_KSU"
-ui_print "KernelSU-Next fork focused on customization and root-hiding features!"
-ui_print " "
-ui_print "GKI_KernelSU_SUSFS GitHub Repository:"
-ui_print "https://github.com/WildKernels/GKI_KernelSU_SUSFS"
-ui_print "GKI kernels with KernelSU and SUSFS."
-ui_print " "
-ui_print "OnePlus_KernelSU_SUSFS GitHub Repository:"
-ui_print "https://github.com/WildKernels/OnePlus_KernelSU_SUSFS"
-ui_print "OnePlus kernels with KernelSU and SUSFS."
-ui_print " "
-ui_print "Samsung_KernelSU_SUSFS GitHub Repository:"
-ui_print "https://github.com/WildKernels/Samsung_KernelSU_SUSFS"
-ui_print "Samsung kernels with KernelSU and SUSFS."
-ui_print " "

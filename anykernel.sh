@@ -4,15 +4,15 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=Wild Kernels by TheWildJames aka Morgan Weedman
-do.devicecheck=0
+kernel.string=Google GKI Kernels
+do.devicecheck=1
 do.modules=0
 do.systemless=0
 do.cleanup=1
 do.cleanuponabort=0
 do.check_boot_version=0
-device.name1=
-device.name2=
+device.name1=popsicle
+device.name2=cheetah
 device.name3=
 device.name4=
 device.name5=
@@ -20,7 +20,6 @@ supported.versions=
 supported.patchlevels=
 supported.vendorpatchlevels=
 '; } # end properties
-
 
 ### AnyKernel install
 ## boot shell variables
@@ -43,7 +42,9 @@ case $kernel_version in
     *) ksu_supported=false ;;
 esac
 
-ui_print " " "  -> Wild Kernels Supported: $ksu_supported"
+ui_print " " "  -> Flashing Kernel..."
+
+
 $ksu_supported || abort "  -> Non-GKI device, abort."
 
 # boot install
@@ -55,5 +56,4 @@ if [ -f "$SPLITIMG/ramdisk.cpio" ]; then
 else
     flash_boot
 fi
-
-ui_print " "
+## end boot install

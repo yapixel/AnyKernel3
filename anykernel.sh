@@ -16,7 +16,7 @@ device.name2=cheetah
 device.name3=
 device.name4=
 device.name5=
-supported.versions=
+supported.versions=16
 supported.patchlevels=
 supported.vendorpatchlevels=
 '; } # end properties
